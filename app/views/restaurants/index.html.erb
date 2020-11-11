@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <p><%= notice %></p>
+
+
+<h1>Your Restaurants</h1>
+<p>Displaying all your restaurants. Go to restaurant details to leave your review.</p>
+
+<div>
+    <ul>
+    <% @restaurants.each do |restaurant| %>
+    <li><h2><%= restaurant.name %></h2></li>
+    <li><%= restaurant.address %></li>
+    <li><%= restaurant.phone_number %></li>
+    <li><%= link_to 'Details', restaurant %></li>
+    <% end %>
+    </ul>
+</div>
+
+<div>
+  <%= link_to 'Create new restaurant', new_restaurant_path %>
+</div>
+
+
+</div>
