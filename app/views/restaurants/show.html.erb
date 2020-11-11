@@ -27,7 +27,7 @@
     </strong>
   </p>
   <% @reviews.each do |review| %>
-    <li> "<%= review.content %>" | <%= review.rating %></li>
+    <li> "<%= review.content %>" | You rated: <%= review.rating %></li>
   <hr>
   <% end %>
 
